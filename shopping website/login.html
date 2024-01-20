@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Window</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     .wrapper{
+        position: relative;
+                background:transparent;
+                color: #fff;
+               width: 420px;
+               padding: 40px 50px 50px 40px;
+               border-radius: 30px;
+               border: 2px solid rgba(255, 255, 255, 0.2);
+
+
+            }
+      body{
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                min-height: 100vh;
+                background-size: cover;
+                ;
+            }
+      .wrapper form h1{
+                font-size: 36px;
+                text-align: center;
+                
+        }
+       .wrapper .input-box {
+        width: 100%;
+        height: 50px;
+        margin: 30px 0px;
+        position: relative;
+       }
+       .wrapper .input-box input{
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 40px;
+        color: #fff;
+        padding-left: 25px;
+       }
+       .wrapper .input-box input::placeholder{
+        color: #fff;
+       }
+      
+       .input-box img{
+       position: absolute;
+       right: 20px;
+       top: 50%;
+       transform: translateY(-50%);
+     }
+     .wrapper .remember-forgot{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0px 15px ;
+     }
+      
+    .wrapper .remember-forgot a{
+           text-decoration: none;
+           color: white;
+           transition: 0.2s ease;
+    }
+    .wrapper .remember-forgot a:hover{
+       text-decoration: underline;
+       cursor: pointer;
+       color: #18e4eb;
+    }
+    .wrapper .login-button{
+        width: 100%;
+       height: 45px;
+       outline: none;
+       border-radius: 45px;
+       background-color: #088178;
+       border: none;
+       box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+       cursor: pointer;
+       font-size: 16px;
+       color: #fff;
+       font-weight: 600;
+        
+    }
+    .wrapper .register-link{
+        font-size: 14.5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .wrapper .register-link a{
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        transition: 0.2s ease;
+
+    }
+    .wrapper .register-link a:hover{
+        text-decoration: underline;
+        color: #18e4eb;
+    }
+    .backvideo{
+            height: -300vw;
+            width: 98vw;
+            position: absolute;
+    }
+    </style>
+</head>
+<body>
+         
+    <video class="backvideo" autoplay loop muted  src="images/login/login-banner.mp4" type="video/mp4"></video>
+
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                    <input type="text" name="" id="" placeholder="Username">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhJJREFUSEuNlr1rVUEQxX+DWL+IWliGYPWagLZiaRPhQQJJY2OXxiJ+lGkEQQiKBPwTJE3IF2nyDyiIWAQrxVIJqIUKQsBMcu/dd+/s7tx9ecX7mN07s3PmnLNPSF8CaBYNgb7FOF7/Cm/iP2Kj4Xv3VFysWFOoliecrl6+jfAMZRjyHYI8AX1bZ1DGH1m68xRYEngTcthEJ8AI2OsDtIo3EPW3OYXyVeDSGNPuuFX7+l1hBvhXF3G6mdTBCGTLTj2bjnAH5cB2ke5pZyBoSqCHIGtFkGEFeOnQom6pt4MA3V2U3T4qh6RzwH5pT2lGA+ALcMXbJHCkwnWUPz4bow5iFDu4ZBF0wylwIjCvsG3mm2yTwKLJwr0FPAcZgv4HPoE8FvRdxC4nTzMDh6aWvkX3CAkcgrSpQ4EeEie+1Gct5QJZG3Waq8CjM6XeAGYRLreKbNr7CfoReA/yAvSHS4TuRLUygw7kHug6wiAWRtiTy/8XcB/YaRE3gMRCEx6gvOqbjc+HNtsCymZqG9ZNp4HPwIVM+hn47jT+gkxbuKL7QOC1CssV1nZoFsbOlyJIjWfLKujT1vgSOL8B12Le+i5TkP8HgZtjhzY6qE90rHAxLWCG33RWvmR+CwwadudW0bLeseXMVDMxdoEmc3VL+fjGAPhUdg2g7EX2APbmKvzNcO+StLNUBwkUMVg+u2K3sW2cAoqL4CDysFL3AAAAAElFTkSuQmCC"/>
+            </div>
+           <div class="input-box">
+            <input type="password" name="" id="" placeholder="Password">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfNJREFUSEudljtOHFEQRU+xBURAyEdCMhFbsANYwIgFkCEcITIIQEZyMAERrAEkkGNbZgtkHgkJS0SIALEDVNDdNa9fvU9j08lMd7363nurW6hcAmjBVnveHxUEDb7SO9i/9qcQJjbHiTM379vchSs2JSlGCNson+3wNcgp6I+8yVKCWtWtt4xB91yg/vzh24Ej8GPx4ypiYA7CJioXhsY34MyOfwX2rdZ14NcQlt7mZ30DrAG7wEkSZB84Bn6CbJQpATnIFsWm8IIyA8whPCXgzwMPwDPIbMucCjfikGmnU6Y2MysVGexD5CuwKERrAwiI04RFE1TtuWNjykyfwHN1qpgQIGmk79AqSeeU60AYoXIMutJlfl+7dupW4QC4fK+DPyifBuVXF/oEWI3rKim5tIKKOMU7J14I8frJwal4TQPEbKkwp4sZiJBLsO/Ai+4c2DG/MSpbMW+jqXXamvr2N2GfJCMKrgsg9xZ0CbircMCJ939GNA/yaAkWQf72HbhWM1zTXdS/LbzlChhZ1b9RvsSzjsb1YQwa5MQ4oKk+olF3Z6ogm7VMpjhBTYINBH6F+WUntEL7Bzo6oRsKE5DVlF1pKc2cvwPLjvuDa6Nl4K0KB6itigj3XAkD+6cirsra6rZ8OqJWJRUMKh8zQbjZO+MVVnXLIalPvsIAAAAASUVORK5CYII="/>
+           </div>
+           <div class="remember-forgot">
+            <label for=""><input type="checkbox" name="" id="">Remember me</label>
+            <a href="#">Forgot Password?</a>
+           </div>
+
+           <button type="submit" class="login-button">Login</button>
+
+           <div class="register-link"><p>Don't have an account?
+            <a href="#">Register</a></p>
+           </div>
+        </form>
+    </div>
+</body>
+</html>
